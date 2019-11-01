@@ -27,7 +27,7 @@ def exception_hook(exc_type, exc_value, exc_traceback):
 sys.excepthook = exception_hook
 logger = logging.getLogger(__name__)  
 APP_FOLDER = os.path.dirname(os.path.realpath(__file__))
-app = Client("mybot", bot_token=os.environ.get("TOKEN"), api_id=os.environ.get("api_id"), api_hash=os.environ.get("api_hash"))
+app = Client("mybot", bot_token=os.environ.get("TG_BOT_TOKEN"), api_id=os.environ.get("APP_ID"), api_hash=os.environ.get("API_HASH"))
 #Iprint(f)     
 sadmin = "off"
 madmin = "off"
